@@ -130,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <!-- NOTE: this JS must live here (not in our global JS file) because it relies
      on being processed by Jinja before it is run (specifically for replacing
-     variables notebooks and {'json_url': 'file:///Users/davidcallow/Projects/jupyter-book-sphinx-versions/docs/_static/switcher.json', 'version_match': '1.0.0'}.
+     variables notebooks and {'json_url': 'https://quant-dc.github.io/jupyter-book-sphinx-versions/_static/switcher.json', 'version_match': '1.0.0'}.
 -->
 
 <script type="text/javascript">
@@ -157,7 +157,7 @@ function checkPageExistsAndRedirect(event) {
 
 // Populate the version switcher from the JSON config file
 (function () {
-    $.getJSON("file:///Users/davidcallow/Projects/jupyter-book-sphinx-versions/docs/_static/switcher.json", function(data, textStatus, jqXHR) {
+    $.getJSON("https://quant-dc.github.io/jupyter-book-sphinx-versions/_static/switcher.json", function(data, textStatus, jqXHR) {
         const currentFilePath = "notebooks.html";
         // create links to the corresponding page in the other docs versions
         $.each(data, function(index, entry) {
@@ -319,7 +319,7 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x10785c640&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x111b799a0&gt;
 </pre></div>
 </div>
 </div>

@@ -131,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <!-- NOTE: this JS must live here (not in our global JS file) because it relies
      on being processed by Jinja before it is run (specifically for replacing
-     variables search and {'json_url': 'file:///Users/davidcallow/Projects/jupyter-book-sphinx-versions/docs/_static/switcher.json', 'version_match': '1.0.0'}.
+     variables search and {'json_url': 'https://quant-dc.github.io/jupyter-book-sphinx-versions/_static/switcher.json', 'version_match': '1.0.0'}.
 -->
 
 <script type="text/javascript">
@@ -158,7 +158,7 @@ function checkPageExistsAndRedirect(event) {
 
 // Populate the version switcher from the JSON config file
 (function () {
-    $.getJSON("file:///Users/davidcallow/Projects/jupyter-book-sphinx-versions/docs/_static/switcher.json", function(data, textStatus, jqXHR) {
+    $.getJSON("https://quant-dc.github.io/jupyter-book-sphinx-versions/_static/switcher.json", function(data, textStatus, jqXHR) {
         const currentFilePath = "search.html";
         // create links to the corresponding page in the other docs versions
         $.each(data, function(index, entry) {
