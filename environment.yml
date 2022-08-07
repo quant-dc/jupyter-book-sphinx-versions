@@ -1,0 +1,22 @@
+name: jupyter-book-sphinx-versions
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - sphinx<5
+  - matplotlib
+  - jupyter-book
+  - pydata-sphinx-theme
+  - numpydoc
+  - nbsphinx
+  - nbformat
+  - notebook
+  - click
+  - myst-parser
+  - loguru
+  - jupyter_sphinx
+  - myst-nb
+  - pip
+  - pip:
+    - sphinx-design
+    - sphinx-copybutton

@@ -1,0 +1,3 @@
+notebooks/_build
+*.pickle
+.idea
